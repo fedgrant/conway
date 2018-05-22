@@ -32,6 +32,7 @@ class Game {
     this.state = newState;
     this.print();
   }
+  
   checkNeighbors(sx, sy) {
     let possibleNeighbors = [[1,1], [1,0], [1,-1], [1,0], [0,-1], [-1,1], [-1,0], [-1,-1]];
     let s = this.state;
