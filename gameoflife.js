@@ -32,7 +32,7 @@ class Game {
     this.state = newState;
     this.print();
   }
-  
+
   checkNeighbors(sx, sy) {
     let possibleNeighbors = [[1,1], [1,0], [1,-1], [1,0], [0,-1], [-1,1], [-1,0], [-1,-1]];
     let s = this.state;
@@ -64,7 +64,7 @@ class Game {
   }
 }
 
-let g = new Game(1, 10);
+let g = new Game(10, 10);
 g.print();
 g.start();
 setTimeout(function() {
